@@ -2,6 +2,10 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const logger = require('morgan')
 const app = express()
+
+// const path = require('ngraph.path')
+// const pathFinder = path.aGreedy(graph)
+
 const {
   fallbackHandler,
   notFoundHandler,
@@ -36,6 +40,7 @@ app.post('/start', (request, response) => {
 // Handle POST request to '/move'
 app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
+  console.log(request);
 
   // Response data
   const data = {
